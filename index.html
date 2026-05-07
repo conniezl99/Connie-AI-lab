@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maze Muncher</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <h1>Maze Muncher</h1>
+    <p class="subtitle">A Pac-Man inspired mini game. Use arrow keys or WASD.</p>
+    <section class="hud" aria-label="Game information">
+      <span>Score: <strong id="score">0</strong></span>
+      <span>Lives: <strong id="lives">3</strong></span>
+      <span>Pellets: <strong id="pellets">0</strong></span>
+    </section>
+    <canvas id="game" width="560" height="560" aria-label="Maze Muncher game area"></canvas>
+    <p id="message" class="message">Collect all pellets and avoid ghosts.</p>
+    <button id="restart">Restart</button>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
